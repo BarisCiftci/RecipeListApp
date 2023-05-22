@@ -14,13 +14,20 @@ struct RecipeView: View {
     @ObservedObject var model = RecipeModel()
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        List(model.recipes) { r in
+            
+            HStack(spacing: 20) {
+                Image(r.image)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 50, height: 50)
+                    .clipped()
+                    .cornerRadius(12)
+                Text(r.name)
+            }
+            
         }
-        .padding()
+        .listStyle(.plain)
     }
 }
 
