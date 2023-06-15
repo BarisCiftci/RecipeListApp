@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D17B1BA2A3BA7E00032E2AA /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D17B1B92A3BA7E00032E2AA /* RecipeDetailView.swift */; };
 		3D38233E2A1BF1400006A67A /* RecipeListAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D38233D2A1BF1400006A67A /* RecipeListAppApp.swift */; };
 		3D3823402A1BF1400006A67A /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D38233F2A1BF1400006A67A /* RecipeView.swift */; };
 		3D3823422A1BF1410006A67A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3823412A1BF1410006A67A /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D17B1B92A3BA7E00032E2AA /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 		3D38233A2A1BF1400006A67A /* RecipeListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D38233D2A1BF1400006A67A /* RecipeListAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListAppApp.swift; sourceTree = "<group>"; };
 		3D38233F2A1BF1400006A67A /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				3D38233F2A1BF1400006A67A /* RecipeView.swift */,
+				3D17B1B92A3BA7E00032E2AA /* RecipeDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D3823562A1BFC170006A67A /* Recipe.swift in Sources */,
+				3D17B1BA2A3BA7E00032E2AA /* RecipeDetailView.swift in Sources */,
 				3D3823582A1BFD3A0006A67A /* RecipeModel.swift in Sources */,
 				3D3823402A1BF1400006A67A /* RecipeView.swift in Sources */,
 				3D38233E2A1BF1400006A67A /* RecipeListAppApp.swift in Sources */,
