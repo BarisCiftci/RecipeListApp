@@ -52,7 +52,7 @@ struct RecipeDetailView_Previews: PreviewProvider {
     static var previews: some View {
         
         // Create a dummy recipe
-        var model =  RecipeModel()
+        let model =  RecipeModel()
         RecipeDetailView(recipe: model.recipes[0])
     }
 }

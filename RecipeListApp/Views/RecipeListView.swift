@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RecipeView: View {
+struct RecipeListView: View {
     
     // Reference the view model
     
@@ -41,8 +41,8 @@ struct RecipeView: View {
     }
 }
 
-struct RecipeView_Previews: PreviewProvider {
+struct RecipeListView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeView()
+        RecipeListView()
     }
 }
