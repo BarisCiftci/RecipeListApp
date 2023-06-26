@@ -18,30 +18,30 @@ struct RecipeDetailView: View {
                     .resizable()
                     .scaledToFit()
                 
-                        VStack(alignment: .leading) {
-                        Text("Ingredients")
-                            .font(.headline)
+                VStack(alignment: .leading) {
+                    Text("Ingredients")
+                        .font(.headline)
+                        .padding(.bottom)
+                    
+                    ForEach (recipe.ingredients) { item in
+                        Text("- " + item.name)
+                    }
+                }
+                .padding(.horizontal)
+                VStack(alignment: .leading){
+                    Text("Directions")
+                        .font(.headline)
+                        .padding([.bottom, .top])
+                    
+                    ForEach (recipe.directions, id:\.self) { item in
+                        Text("- \(item)")
                             .padding(.bottom)
-                        
-                        ForEach (recipe.ingredients, id:\.self) { item in
-                            Text("- " + item)
-                        }
                     }
-                        .padding(.horizontal)
-                    VStack(alignment: .leading){
-                        Text("Directions")
-                            .font(.headline)
-                            .padding([.bottom, .top])
-                        
-                        ForEach (recipe.directions, id:\.self) { item in
-                            Text("- \(item)")
-                                .padding(.bottom)
-                        }
-                    }
+                }
                 
                 .padding(.horizontal)
             }
-            
+         
             
         }
         .navigationBarTitle(recipe.name)
