@@ -10,13 +10,10 @@ import SwiftUI
 struct RecipeListView: View {
     
     // Reference the view model
-    
-    @ObservedObject var model = RecipeModel()
+    @EnvironmentObject var model: RecipeModel
     
     var body: some View {
-        
-        
-        
+     
         NavigationView {
             List(model.recipes) { r in
                 
@@ -38,11 +35,5 @@ struct RecipeListView: View {
             .navigationBarTitle("All Recipes")
             .listStyle(.plain)
         }
-    }
-}
-
-struct RecipeListView_Previews: PreviewProvider {
-    static var previews: some View {
-        RecipeListView()
     }
 }
