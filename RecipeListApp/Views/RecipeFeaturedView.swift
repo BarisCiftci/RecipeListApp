@@ -40,7 +40,7 @@ struct RecipeFeaturedView: View {
                                         .aspectRatio(contentMode: .fill)
                                         .clipped()
                                     Text("Lasagna")
-                                        .padding(5)
+                                        .padding(25)
                                     
                                 }
                             }
@@ -64,8 +64,17 @@ struct RecipeFeaturedView: View {
                 Text("Healty, hearty")
             }
             .padding(.leading)
+            .fontWidth(.condensed)
         }
         
     }
 }
 
+struct RecipeFeaturedView_Previews: PreviewProvider {
+    static var previews: some View {
+        
+        RecipeFeaturedView()
+            .environmentObject(RecipeModel())
+        
+    }
+}

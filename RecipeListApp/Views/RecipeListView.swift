@@ -13,27 +13,49 @@ struct RecipeListView: View {
     @EnvironmentObject var model: RecipeModel
     
     var body: some View {
-     
+        
         NavigationView {
-            List(model.recipes) { r in
+            VStack(alignment: .leading) {
+                Text("All Recipes")
+                    .font(.largeTitle)
+                    .fontWidth(.condensed)
+                    .bold()
                 
-                NavigationLink {
-                    RecipeDetailView(recipe: r)
-                } label: {
-                    HStack(spacing: 20) {
-                        Image(r.image)
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 50, height: 50)
-                            .clipped()
-                            .cornerRadius(12)
-                        Text(r.name)
+                ScrollView {
+                    LazyVStack(alignment: .leading) {
+                        ForEach(model.recipes) { r in
+                            
+                            NavigationLink {
+                                RecipeDetailView(recipe: r)
+                            } label: {
+                                HStack(spacing: 20) {
+                                    Image(r.image)
+                                        .resizable()
+                                        .scaledToFill()
+                                        .frame(width: 50, height: 50)
+                                        .clipped()
+                                        .cornerRadius(12)
+                                    Text(r.name)
+                                        .foregroundColor(.black)
+                                }
+                            }
+                        }
                     }
                 }
-
+                
             }
-            .navigationBarTitle("All Recipes")
+            .padding(.leading)
+            .navigationBarHidden(true)
             .listStyle(.plain)
         }
+    }
+}
+
+struct RecipeListView_Previews: PreviewProvider {
+    static var previews: some View {
+        
+        RecipeListView()
+            .environmentObject(RecipeModel())
+        
     }
 }
