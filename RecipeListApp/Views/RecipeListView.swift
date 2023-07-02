@@ -16,10 +16,13 @@ struct RecipeListView: View {
         
         NavigationView {
             VStack(alignment: .leading) {
-                Text("All Recipes")
-                    .font(.largeTitle)
-                    .fontWidth(.condensed)
-                    .bold()
+                HStack {
+                    Text("All Recipes")
+                        .font(.largeTitle)
+                        .fontWidth(.condensed)
+                        .fontWeight(.black)
+                    
+                }
                 
                 ScrollView {
                     LazyVStack(alignment: .leading) {
@@ -36,7 +39,7 @@ struct RecipeListView: View {
                                         .clipped()
                                         .cornerRadius(12)
                                     Text(r.name)
-                                        .foregroundColor(.black)
+                                        .foregroundColor(.primary)
                                 }
                             }
                         }
