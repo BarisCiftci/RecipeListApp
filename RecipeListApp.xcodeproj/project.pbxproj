@@ -18,6 +18,7 @@
 		3D3823562A1BFC170006A67A /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3823552A1BFC170006A67A /* Recipe.swift */; };
 		3D3823582A1BFD3A0006A67A /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3823572A1BFD3A0006A67A /* RecipeModel.swift */; };
 		3D38235A2A1BFE730006A67A /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3823592A1BFE730006A67A /* DataService.swift */; };
+		3D3F967E2A54A8290059130E /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3F967D2A54A8290059130E /* Rational.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		3D3823552A1BFC170006A67A /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		3D3823572A1BFD3A0006A67A /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 		3D3823592A1BFE730006A67A /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		3D3F967D2A54A8290059130E /* Rational.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rational.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				3D38234E2A1BF4790006A67A /* Models */,
 				3D3823522A1BF4A90006A67A /* Services */,
 				3D3823512A1BF4A40006A67A /* Data */,
+				3D3F967C2A54A8110059130E /* Utilities */,
 				3D3823412A1BF1410006A67A /* Assets.xcassets */,
 				3D3823432A1BF1410006A67A /* RecipeListApp.entitlements */,
 				3D3823442A1BF1410006A67A /* Preview Content */,
@@ -128,6 +131,14 @@
 				3D3823592A1BFE730006A67A /* DataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		3D3F967C2A54A8110059130E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3D3F967D2A54A8290059130E /* Rational.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +214,7 @@
 			files = (
 				3D3823562A1BFC170006A67A /* Recipe.swift in Sources */,
 				3D17B1BA2A3BA7E00032E2AA /* RecipeDetailView.swift in Sources */,
+				3D3F967E2A54A8290059130E /* Rational.swift in Sources */,
 				3D3823582A1BFD3A0006A67A /* RecipeModel.swift in Sources */,
 				3D3823402A1BF1400006A67A /* RecipeListView.swift in Sources */,
 				3D38233E2A1BF1400006A67A /* RecipeListAppApp.swift in Sources */,
