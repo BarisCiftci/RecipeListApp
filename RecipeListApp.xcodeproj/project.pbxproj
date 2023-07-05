@@ -19,6 +19,7 @@
 		3D3823582A1BFD3A0006A67A /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3823572A1BFD3A0006A67A /* RecipeModel.swift */; };
 		3D38235A2A1BFE730006A67A /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3823592A1BFE730006A67A /* DataService.swift */; };
 		3D3F967E2A54A8290059130E /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3F967D2A54A8290059130E /* Rational.swift */; };
+		3D3F96802A5600850059130E /* RecipeHighlights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3F967F2A5600850059130E /* RecipeHighlights.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		3D3823572A1BFD3A0006A67A /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 		3D3823592A1BFE730006A67A /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		3D3F967D2A54A8290059130E /* Rational.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rational.swift; sourceTree = "<group>"; };
+		3D3F967F2A5600850059130E /* RecipeHighlights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeHighlights.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				3D13F1D02A4A346F0093CEE9 /* RecipeFeaturedView.swift */,
 				3D38233F2A1BF1400006A67A /* RecipeListView.swift */,
 				3D17B1B92A3BA7E00032E2AA /* RecipeDetailView.swift */,
+				3D3F967F2A5600850059130E /* RecipeHighlights.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				3D3823562A1BFC170006A67A /* Recipe.swift in Sources */,
 				3D17B1BA2A3BA7E00032E2AA /* RecipeDetailView.swift in Sources */,
+				3D3F96802A5600850059130E /* RecipeHighlights.swift in Sources */,
 				3D3F967E2A54A8290059130E /* Rational.swift in Sources */,
 				3D3823582A1BFD3A0006A67A /* RecipeModel.swift in Sources */,
 				3D3823402A1BF1400006A67A /* RecipeListView.swift in Sources */,
